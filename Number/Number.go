@@ -11,6 +11,8 @@ func Start() string {
 	fmt.Println("Если твой ответ - нет, то набирай на клавиатуре no ")
 	fmt.Println("И потом нажми Enter")
 	fmt.Println("Ты поняла ?")
+	fmt.Println("Ответь yes (поняла и хочешь поиграть)")
+	fmt.Println("Ответь no  (играть не хочешь)")
 
 	var answer string
 	fmt.Scan(&answer)
