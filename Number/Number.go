@@ -55,7 +55,7 @@ func main() {
 		fmt.Println("--------------")
 		fmt.Println("Погнали!")
 		Number := Work(number)
-		fmt.Println(Number)
+		fmt.Println("Ты задумала число", Number)
 	} else if answer == "no" {
 		fmt.Println("--------------")
 		fmt.Println("До свидания!")
@@ -67,12 +67,12 @@ func main() {
 			fmt.Println("--------------")
 			fmt.Println("Погнали!")
 			Number := Work(number)
-			fmt.Println(Number)
+			fmt.Println("Ты задумала число", Number)
 		} else if answer == "no" {
 			fmt.Println("--------------")
 			fmt.Println("До свидания!")
 		} else {
-			fmt.Println("Ты устала. Отдохни.Потом попробуй еще раз.")
+			fmt.Println("Ты устала. Отдохни. Потом попробуй еще раз.")
 			fmt.Println("До свидания!")
 		}
 	}
