@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"strconv"
 )
 
 func Start() string {
@@ -40,8 +42,19 @@ func Work(number int) int {
 }
 
 func main() {
+	var number int = 30
 
-	var number int = 30 // -- это число нужно сделать параметром командной строки --
+	if len(os.Args) > 1 {
+		//fmt.Println(os.Args[1])
+		n, err := strconv.ParseInt(os.Args[1], 10, 64)
+		if err == nil {
+			if n > 0 {
+				number = int(n)
+			}
+		}
+	}
+	//fmt.Println(number)
+
 	fmt.Println("--------------")
 	fmt.Println("Привет, Анюта!")
 	fmt.Println("--------------")
